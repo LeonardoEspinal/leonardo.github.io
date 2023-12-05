@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>AE futuro desarrolador</title>
+  </head>
+
+  <body>
+    <!-- CABEZA CENTRAL -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/AE/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">AYUDA</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- CABEZA IZQUIERDA -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="redes">
+              <a href="https://www.youtube.com/channel/UCAjaXNTOcDZWOgLt8hSEveA"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/alanleonardo.espinalalvarez"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/leo_espinal_0/"
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos A Todos</p>
+          <h2>
+            Soy <span>Alan Espinal</span>, Futuro Desarrolador de Software
+          </h2>
+          <p class="descripcion">
+            Hola, mi nombre es Alan y hoy vengo a presentarte mi pagina enfocada
+            a mi persona.
+          </p>
+          <a href="#portfolio">Ir a Mis Pequeños Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE DE MI -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/yo.jpg" alt="mi persona" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Alan Espinal</span></h2>
+        <h3>Futuro Desarrolador de Software</h3>
+        <p>
+          hola, soy Alan, tengo 19 años y tengo un sueño de convertirme en un
+          futuro desarrollador de Software. Me apasiona la tecnología y la
+          programación, me gusta aprender nuevos lenguajes de programación y
+          herramientas para crear cosas útiles, Estudio informática en la
+          Universidad Mayor de San Andrés, soy alguien curioso que disfruta de
+          los retos para resolver problemas, espero seguir creciendo como
+          persona.
+        </p>
+        <p>
+          Mi sueño es seguir adelante y llegar a ser un buen programador que se
+          apasione seguir mejorando la tecnología.
+        </p>
+        <a
+          href="calculadora/calculadora.html"
+          >¿QUIERES VER UN PROYEXTO MIO A BASE DE JS?</a>
+      </div>
+    </section>
+
+    <!-- PARTE DE AYUDA -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">¿QUIERES AYUDA MIA?</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Programacion I</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Python</li>
+            <li>C#</li>
+            <li>Java</li>
+          </ul>
+          <p>
+            Si necesitas ayuda en alguno de esos tipos de leguajes no dudes en avisarme.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+          <h4>Programacion Web I</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+          <p>
+            Te ayudo a crear tu primera pagina Web<br>contactame
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+          <h4>Fundamentos Digitales</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>binario</li>
+            <li>karnaugh</li>
+            <li>Alg. boole</li>
+          </ul>
+          <p>
+            Son alguno de los temas que podria ayudarte en esta materia, no dudes en escribirnos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE DE MIS PROYECTOS -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Futuros Proyectos</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto1.png" alt="" />
+          <div class="info">
+            <h4>Pantalla de Login con Js</h4>
+            <p>hecho para javasrip</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto2.png" alt="" />
+          <div class="info">
+            <h4>Tienda Virtual Funcional</h4>
+            <p>Pagina de una tienda virtual (HTML,CSS,JS)</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto3.png" alt="" />
+          <div class="info">
+            <h4>Calculadora de Bases</h4>
+            <p>Con cualquier lenguaje hacer una Calculadora de bases</p>
+          </div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto4.png" alt="" />
+          <div class="info">
+            <h4>Pokedex</h4>
+            <p>A base de HTML, crear toda una pokedex con toda informacion</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto5.png" alt="" />
+          <div class="info">
+            <h4>Copia de Youtube</h4>
+            <p>A base de mi conocimiento crear una pagina identica a Youtube</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto6.jpg" alt="" />
+          <div class="info">
+            <h4>Un Juego Retro</h4>
+            <p>En cualquier lenguaje crear un juego</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE DE CONTACTO -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo *"
+              class="input-mitad"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- PARTE DE CONTACTO -->
+    <footer>
+      <p>Todos los derechos reservados - 2022</p>
+      <div class="redes">
+        <a href="https://www.youtube.com/channel/UCAjaXNTOcDZWOgLt8hSEveA"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/alanleonardo.espinalalvarez"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/leo_espinal_0/"><i class="fa-brands fa-instagram-square"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
